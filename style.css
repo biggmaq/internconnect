@@ -1,0 +1,323 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Body */
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#003366;
+    position:fixed;
+    top:0;
+    left:0;
+    overflow-y:auto;
+    padding-top:20px;
+}
+
+.sidebar h1{
+    color:white;
+    text-align:center;
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    background:#0056b3;
+    padding-left:30px;
+}
+
+/* MAIN CONTENT */
+
+.content{
+    margin-left:270px;
+    padding:40px;
+    min-height:100vh;
+}
+
+section{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+section h1{
+    color:#003366;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+section p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+/* SEARCH BAR */
+
+.Search-Container{
+    display:flex;
+    justify-content:center;
+    margin:30px 0;
+}
+
+.Search-Container input{
+    width:400px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px 0 0 5px;
+    font-size:16px;
+}
+
+.Search-Container button{
+    background:#003366;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+    border-radius:0 5px 5px 0;
+}
+
+.Search-Container button:hover{
+    background:#0056b3;
+}
+
+/* HOME PAGE IMAGES */
+
+marquee{
+    margin-top:30px;
+}
+
+marquee img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-right:20px;
+}
+
+/* FORMS */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+textarea{
+    height:150px;
+    resize:none;
+}
+
+form button{
+    background:#003366;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+form button:hover{
+    background:#0056b3;
+}
+
+/* APPLY PAGE */
+
+#apply{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+}
+
+#apply form{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+/*  STUDENT & EMPLOYER LOGIN */
+
+.login-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.login-container form{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.login-container img{
+    flex:1;
+    width:100%;
+    max-width:450px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* INTERNSHIP PAGE */
+
+#internships{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.card p{
+    margin-bottom:10px;
+}
+
+.card button{
+    background:#003366;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#0056b3;
+}
+
+/* CAREER TIPS */
+
+#career ul{
+    padding-left:20px;
+}
+
+#career li{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+/* CONTACT PAGE */
+
+iframe{
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* FAQ PAGE */
+
+#faq h3{
+    color:#003366;
+    margin-top:20px;
+}
+
+#faq p{
+    margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    border-radius:10px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:900px){
+
+.sidebar{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+
+.content{
+    margin-left:0;
+    padding:20px;
+}
+
+.login-container{
+    flex-direction:column;
+}
+
+.login-container img{
+    max-width:100%;
+}
+
+.Search-Container{
+    flex-direction:column;
+}
+
+.Search-Container input{
+    width:100%;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+
+.Search-Container button{
+    width:100%;
+    border-radius:5px;
+}
+
+#internships{
+    grid-template-columns:1fr;
+}
+
+}
